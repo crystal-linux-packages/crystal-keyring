@@ -1,5 +1,5 @@
-# Maintainer: jnats <jnats[at]salyut[dot]one>
-# Maintainer: matt <mdc[at]bucknell[dot]edu>
+# Maintainer: Michal S. <michal[at]tar[dot]black>
+# Maintainer: Matt C.   <mdc[at]bucknell[dot]edu>
 
 # Arch credits:
 # Pierre Schmitz <pierre@archlinux.de>
