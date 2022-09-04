@@ -1,8 +1,6 @@
-# Maintainer: Michal S. <michal[at]tar[dot]black>
-# Maintainer: Matt C.   <mdc[at]bucknell[dot]edu>
-
-# Arch credits:
-# Pierre Schmitz <pierre@archlinux.de>
+# Maintainer: TWljaGFsIFMuIDxtaWNoYWxAZ2V0Y3J5c3QuYWw+         | base64 -d
+# Maintainer: TWF0dCBDLiA8bWF0dEBnZXRjcnlzdC5hbD4=             | base64 -d
+# Credit:     UGllcnJlIFNjaG1pdHogPHBpZXJyZUBhcmNobGludXguZGU+ | base64 -d
 
 pkgname=crystal-keyring
 pkgver=20220729
@@ -11,11 +9,12 @@ pkgdesc='Crystal Linux PGP keyring'
 arch=('any')
 url="https://github.com/crystal-linux/${pkgname}"
 license=('GPL')
-install="${pkgname}.install"
-depends=('make')
+install="$pkgname.install"
+makedepends=('make' 'git')
 source=("git+$url")
 sha256sums=('SKIP')
+
 package() {
-  cd "${srcdir}/${pkgname}"
-  make PREFIX=/usr DESTDIR=${pkgdir} install
+  cd "$srcdir/$pkgname"
+  make PREFIX=/usr DESTDIR=$pkgdir install
 }
