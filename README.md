@@ -1,2 +1,2 @@
-# pkgbuild.crystal-keyring
+# crystal-keyring
 PKGBUILD for crystal-keyring
